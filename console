@@ -1,0 +1,20 @@
+Visa: 4283383536677552|01|2026|307
+{
+  bin: '428338',
+  brandCode: 'VISA',
+  last4: '7552',
+  expirationMonth: '01',
+  expirationYear: '2026',
+  binData: {
+    prepaid: 'NO',
+    healthcare: 'NO',
+    debit: 'YES',
+    durbinRegulated: 'NO',
+    commercial: 'UNKNOWN',
+    payroll: 'NO',
+    issuingBank: 'Banco Industrial S.A.',
+    countryOfIssuance: 'GTM',
+    productId: 'F'
+  }
+}
+----------------------------------------------------
