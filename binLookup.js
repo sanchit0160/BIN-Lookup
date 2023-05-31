@@ -6,8 +6,6 @@ function CC(element) {
 	expiryYYYY = ccDetails[2];
 	cvv = ccDetails[3];
 
-	// const [cardNumber, expiryMM, expiryYYYY, cvv] = element.split('|');
-
 	expiryYY = expiryYYYY.slice(0, 2);
 	ccType = getCardType(ccDetails[0]);
 
@@ -41,7 +39,6 @@ function CC(element) {
 }
 
 
-
 // Driver
 const fs = require('fs');
 fs.readFile('input', 'utf8', function(err, data) {
@@ -67,15 +64,6 @@ function getCardType(cardNumber) {
     	DinersClub: /^3(?:0[0-5]|[68][0-9])[0-9]{11}$/,
     	JCB: /^(?:2131|1800|35\d{3})\d{11}$/
   	};
-
-  	/*const validPrefixes = [
-  		"4", // Visa
-  		"51", "52", "53", "54", "55", // MasterCard
-  		"34", "37", // American Express
-  		"6011", // Discover
-  		"300", "301", "302", "303", "304", "305", "36", "38", // Diners Club
-  		"2131", "1800", "35", // JCB
-  	];*/
 
   	// Check each card type regular expression against the cleaned card number
   	for (let [cardType, pattern] of Object.entries(cardTypes)) {
