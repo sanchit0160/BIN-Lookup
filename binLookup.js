@@ -32,9 +32,9 @@ function CC(element) {
 	fetch(url, requestOptions)
 	.then(response => response.json())
 	.then(data => {
-		console.log(`${ccType}: ${element}`);
+		// console.log(`${ccType}: ${element}`);
 		console.log(data.data.tokenizeCreditCard.creditCard);
-		console.log('----------------------------------------------------');
+		// console.log('----------------------------------------------------');
 	})
 }
 
