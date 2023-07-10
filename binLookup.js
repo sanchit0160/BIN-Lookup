@@ -32,7 +32,6 @@ function CC(element) {
 	fetch(url, requestOptions)
 	.then(response => response.json())
 	.then(data => {
-		// console.log(`${ccType}: ${element}`);
 		console.log(data.data.tokenizeCreditCard.creditCard);
 		// console.log('----------------------------------------------------');
 	})
@@ -47,8 +46,6 @@ fs.readFile('input', 'utf8', function(err, data) {
 	const list = data.trim().split('\n');
 	list.forEach(CC);
 });
-
-
 
 // Function to find type of CC
 function getCardType(cardNumber) {
