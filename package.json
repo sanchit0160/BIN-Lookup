@@ -1,0 +1,18 @@
+{
+  "name": "binlookup",
+  "version": "1.0.0",
+  "description": "A BIN Checker for validating and retrieving card information.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests specified\" && exit 1"
+  },
+  "author": "Sanchit Kumar (github.com/sanchit0160)",
+  "license": "ISC",
+  "keywords": ["BIN", "card-checker", "payment", "lookup"],
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "node-fetch": "^3.3.2"
+  }
+}
